@@ -64,7 +64,7 @@ export const ChatMessages = ({
     shouldLoadMore: !isFetchingNextPage && !!hasNextPage,
     count: data?.pages?.[0]?.items?.length ?? 0,
   });
-
+  //@ts-ignore
   if (status === "loading") {
     return (
       <div className="flex flex-col flex-1 justify-center items-center">
